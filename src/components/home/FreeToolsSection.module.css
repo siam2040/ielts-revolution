@@ -1,0 +1,132 @@
+.toolsSection {
+  background: var(--bg-secondary);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.toolsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.toolCard {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  transition: all var(--transition-slow);
+  position: relative;
+  overflow: hidden;
+}
+
+.toolCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-light);
+}
+
+.toolIconWrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.toolContent {
+  flex: 1;
+}
+
+.toolTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.toolTitleBn {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.toolDesc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.scoreBadge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #6C3CE1 0%, #8B5CF6 100%);
+  border-radius: var(--radius-lg);
+  margin-top: 16px;
+  width: fit-content;
+}
+
+.scoreBadgeValue {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+}
+
+.scoreBadgeLabel {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+.wordBadge {
+  margin-top: 16px;
+  padding: 10px 20px;
+  background: var(--info-light);
+  border-radius: var(--radius-lg);
+  width: fit-content;
+}
+
+.wordBadgeValue {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--info);
+  font-style: italic;
+}
+
+.toolArrow {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  background: var(--primary-lighter);
+  color: var(--primary);
+  transition: all var(--transition-base);
+}
+
+.toolCard:hover .toolArrow {
+  background: var(--primary);
+  color: var(--white);
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .toolsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

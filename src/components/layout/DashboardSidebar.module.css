@@ -1,0 +1,123 @@
+.sidebar {
+  width: 250px;
+  background: var(--white);
+  border-right: 1px solid var(--border);
+  min-height: 100vh;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.logoText {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.navGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.groupTitle {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  padding-left: 8px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--radius-md);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.navItem:hover {
+  background: var(--primary-lighter);
+  color: var(--primary);
+}
+
+.active {
+  background: var(--primary-lighter) !important;
+  color: var(--primary) !important;
+  font-weight: 600 !important;
+}
+
+.liveBadge {
+  margin-left: auto;
+  background: #EF4444;
+  color: #FFF;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+}
+
+.premiumCard {
+  margin-top: auto;
+  background: linear-gradient(135deg, #FAF8FF 0%, #EDE5FF 100%);
+  border: 1px solid rgba(108, 60, 225, 0.2);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  text-align: center;
+}
+
+.crownIcon {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.premiumTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 2px;
+}
+
+.premiumDesc {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.upgradeBtn {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  background: var(--primary);
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast);
+  font-family: var(--font-bn);
+}
+
+.upgradeBtn:hover {
+  background: var(--primary-dark);
+}

@@ -1,0 +1,343 @@
+.main {
+  padding-top: 72px;
+  background: var(--bg-secondary);
+  min-height: 100vh;
+}
+
+.practiceHeader {
+  background: #FFF;
+  border-bottom: 3px solid var(--primary);
+  padding: 20px 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.headerFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerTitleArea {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.skillIconBadge {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillTitle {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.skillTitleBn {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.timerBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #FEF2F2;
+  color: #EF4444;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  border: 1px solid #FECACA;
+}
+
+/* Split Reading Layout */
+.splitPracticeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.passageCard, .questionsCard {
+  background: #FFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.passageTitle, .questionsTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.passageText {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.qInstruct {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.qItem {
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.qText {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.qOptions {
+  display: flex;
+  gap: 16px;
+}
+
+.optLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.submitAnswersBtn {
+  width: 100%;
+  padding: 12px;
+  background: var(--primary);
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: var(--radius-lg);
+  margin-top: 12px;
+}
+
+.scoreResultBox {
+  margin-top: 16px;
+  padding: 16px;
+  background: #DCFCE7;
+  border: 1px solid #86EFAC;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #15803D;
+  font-size: 13px;
+}
+
+/* Writing Module */
+.writingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.writingPromptCard {
+  background: #FFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  padding: 28px;
+}
+
+.taskTag {
+  background: #FFEDD5;
+  color: #EA580C;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.promptQuestion {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin: 12px 0 8px;
+}
+
+.wordLimitNote {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.editorCard {
+  background: #FFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  padding: 20px;
+}
+
+.editorToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.saveDraftBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: 12px;
+}
+
+.essayTextarea {
+  width: 100%;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  font-size: 14px;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+/* Listening Module */
+.listeningContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.audioPlayerCard {
+  background: #FFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.audioControls {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.playPauseBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.audioTrackBar {
+  flex: 1;
+  height: 8px;
+  background: var(--gray-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.audioProgressFill {
+  height: 100%;
+  background: var(--primary);
+}
+
+.audioTimeLeft {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.shortInput {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  font-size: 13px;
+}
+
+/* Speaking Module */
+.speakingContainer {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cueCardBox {
+  background: #FFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  padding: 28px;
+}
+
+.recorderCard {
+  background: #FFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  padding: 40px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.micCircle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #EF4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.3);
+}
+
+.recordStatus {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.recordBtn {
+  padding: 12px 28px;
+  background: #EF4444;
+  color: #FFF;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+}
+
+@media (max-width: 768px) {
+  .splitPracticeGrid { grid-template-columns: 1fr; }
+  .headerFlex { flex-direction: column; gap: 12px; align-items: flex-start; }
+}
